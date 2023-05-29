@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_horizontal_margin"
+    tools:context=".ui.start.fragments.welcome.WelcomeFragment">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="22dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/icon"
+        android:src="@drawable/we_collab_biru"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/small_margin"
+        android:fontFamily="@font/be_vietnam_pro_bold"
+        android:text="@string/we_collabs"
+        android:textColor="@color/primary_color"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/welcome_image_height"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/welcome"
+        android:src="@drawable/welcome"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.12" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/big_margin"
+        android:fontFamily="@font/be_vietnam_pro_bold"
+        android:text="@string/welcome_title_1"
+        android:textColor="@color/primary_color"
+        android:textSize="@dimen/text_size_big_title"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/very_small_margin"
+        android:fontFamily="@font/be_vietnam_pro_medium"
+        android:text="@string/welcome_title_2"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/text_size_semi_big"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/small_margin"
+        android:fontFamily="@font/be_vietnam_pro_regular"
+        android:text="@string/continue_as"
+        android:textColor="@color/text_color"
+        app:layout_constraintBottom_toTopOf="@+id/btnUser"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <include
+        android:id="@+id/btnUser"
+        layout="@layout/fill_button"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/btn_height"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        app:layout_constraintBottom_toTopOf="@+id/btnNgo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <include
+        android:id="@+id/btnNgo"
+        layout="@layout/stroke_button"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/btn_height"
+        android:layout_marginBottom="@dimen/small_margin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

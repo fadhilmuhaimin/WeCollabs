@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/activity_horizontal_margin"
+    android:background="@drawable/rounded_background"
+    android:backgroundTint="@color/white"
+    android:padding="@dimen/small_margin">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/icon"
+        android:src="@drawable/dicoding"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/small_margin"
+        android:fontFamily="@font/be_vietnam_pro_bold"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/text_size_big"
+        app:layout_constraintBottom_toTopOf="@+id/contactBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/logo"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Dicoding" />
+
+    <TextView
+        android:id="@+id/contactBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_background"
+        android:backgroundTint="@color/primary_color"
+        android:fontFamily="@font/be_vietnam_pro_medium"
+        android:paddingStart="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/very_small_margin"
+        android:paddingEnd="@dimen/activity_horizontal_margin"
+        android:paddingBottom="@dimen/very_small_margin"
+        android:text="@string/contact"
+        android:drawablePadding="@dimen/small_margin"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_normal"
+        app:drawableStartCompat="@drawable/ic_call"
+        app:drawableTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/logo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

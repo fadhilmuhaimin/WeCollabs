@@ -1,0 +1,29 @@
+<resources>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_article">Article</string>
+    <string name="title_message">message</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="add_content">add content</string>
+    <string name="organization_logo">Organization Logo</string>
+    <string name="event">Event</string>
+    <string name="you_don_t_have_any_event_yet">You don\'t have any event yet</string>
+    <string name="choose_your_action">Choose your action</string>
+    <string name="add_new_event">Add new event</string>
+    <string name="add_new_program">Add new program</string>
+    <string name="add_event">Add event</string>
+    <string name="event_name">Event name</string>
+    <string name="event_date">Event date</string>
+    <string name="event_address">Event Address</string>
+    <string name="contact_number">Contact number</string>
+    <string name="delete_event">Delete Event</string>
+    <string name="update_event">Update Event</string>
+    <string name="title">Title</string>
+    <string name="date">Date</string>
+    <string name="coming_soon">Coming soon</string>
+    <string name="update_program">Update Program</string>
+    <string name="add_program">Add Program</string>
+    <string name="delete_program">Delete Program</string>
+</resources>

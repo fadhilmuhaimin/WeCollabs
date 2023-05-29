@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:translationZ="2dp">
+
+    <ImageView
+        android:id="@+id/backBtn"
+        android:layout_width="@dimen/normal_icon_size"
+        android:layout_height="@dimen/normal_icon_size"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:src="@drawable/ic_back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/searchLayout"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/appbarHeight"
+        android:layout_marginStart="@dimen/small_margin"
+        android:layout_marginTop="@dimen/small_margin"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="@dimen/small_margin"
+        android:background="@drawable/rounded_background"
+        android:backgroundTint="@color/grey2"
+        android:paddingStart="@dimen/small_margin"
+        android:paddingEnd="@dimen/small_margin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/backBtn"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/searchIcn"
+            android:layout_width="@dimen/small_icon_size"
+            android:layout_height="@dimen/small_icon_size"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_search"
+            app:tint="@color/grey" />
+
+        <EditText
+            android:id="@+id/searchBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/small_margin"
+            android:layout_marginEnd="@dimen/small_margin"
+            android:layout_toEndOf="@id/searchIcn"
+            android:background="@null"
+            android:fontFamily="@font/be_vietnam_pro_regular"
+            android:hint="@string/find_event"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:imeOptions="actionSearch"
+            android:maxLines="1"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/text_size_normal" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:paddingBottom="50dp"
+    tools:context=".ui.articleDetail.ArticleDetailActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/backBtn"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:background="@drawable/circle_background"
+            android:backgroundTint="@color/white"
+            android:translationZ="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerInParent="true"
+                android:contentDescription="@string/icon"
+                android:src="@drawable/ic_back" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/articleImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/article_image"
+            android:src="@drawable/event"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/articleTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:fontFamily="@font/be_vietnam_pro_bold"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/text_size_semi_big"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/articleImage"
+            tools:text="Tokopedia raih tempat kerja terbaik se asia tenggara" />
+
+        <TextView
+            android:id="@+id/articlePublishDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/very_small_margin"
+            android:fontFamily="@font/be_vietnam_pro_light"
+            android:textColor="@color/grey5"
+            android:textSize="@dimen/text_size_small"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/articleTitle"
+            tools:text="Kamis, 22 Agustus 2022" />
+
+        <TextView
+            android:id="@+id/articleContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:fontFamily="@font/be_vietnam_pro_light"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/text_size_normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/articlePublishDate"
+            tools:text="@tools:sample/lorem/random" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

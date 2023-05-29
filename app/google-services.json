@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "589272615348",
+    "project_id": "we-collabs-a2779",
+    "storage_bucket": "we-collabs-a2779.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:589272615348:android:ab5c398cba92a6858c4ae1",
+        "android_client_info": {
+          "package_name": "com.app.wecollabs"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "589272615348-2dkkrd3ho64ptemj9mo08pv9om8clnq4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.wecollabs",
+            "certificate_hash": "415715ec6f873f8afc5edb6c33ba1d1082139961"
+          }
+        },
+        {
+          "client_id": "589272615348-dsaclh7bii8jic2gi0ab8qsrglr1pcqe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJlzBifhuxGhYIoMGEyc8YKB2W5q0j7U8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "589272615348-dsaclh7bii8jic2gi0ab8qsrglr1pcqe.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

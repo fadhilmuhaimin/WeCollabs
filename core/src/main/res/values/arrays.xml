@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="list_sdg">
+        <item>@string/no_poverty</item>
+        <item>@string/zero_hunger</item>
+        <item>@string/good_health</item>
+        <item>@string/quality_education</item>
+        <item>@string/gender_equality</item>
+    </string-array>
+    <string-array name="list_sdg_icon">
+
+    </string-array>
+
+    <string-array name="gender">
+        <item>@string/man</item>
+        <item>@string/woman</item>
+    </string-array>
+</resources>

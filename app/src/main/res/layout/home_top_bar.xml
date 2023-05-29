@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/primary_color"
+    android:padding="@dimen/activity_vertical_margin">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="22dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/icon"
+        android:src="@drawable/we_collabs"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView"
+        app:tint="@color/white" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/small_margin"
+        android:layout_marginTop="@dimen/very_small_margin"
+        android:fontFamily="@font/be_vietnam_pro_bold"
+        android:text="@string/we_collabs"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/notifBtn"
+        android:layout_width="@dimen/normal_icon_size"
+        android:layout_height="@dimen/normal_icon_size"
+        android:contentDescription="@string/title_notifications"
+        android:src="@drawable/ic_notif"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView"
+        app:tint="@color/white" />
+
+    <TextView
+        android:id="@+id/welcomeUserText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:ellipsize="end"
+        android:fontFamily="@font/be_vietnam_pro_regular"
+        android:maxLines="1"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_semi_big"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:text="Hi, Ahmad" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/extra_small_margin"
+        android:fontFamily="@font/be_vietnam_pro_bold"
+        android:text="@string/discover_amazing_event"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_big2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcomeUserText" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_height"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginBottom="@dimen/very_small_margin"
+        android:background="@drawable/rounded_background"
+        android:backgroundTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="@dimen/normal_icon_size"
+        android:layout_height="@dimen/normal_icon_size"
+        android:layout_marginStart="@dimen/small_margin"
+        android:contentDescription="@string/icon"
+        android:src="@drawable/ic_search"
+        app:layout_constraintBottom_toBottomOf="@+id/view2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view2"
+        app:tint="@color/grey3" />
+
+    <EditText
+        android:id="@+id/search_bar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/small_margin"
+        android:layout_marginEnd="@dimen/small_margin"
+        android:background="@null"
+        android:fontFamily="@font/be_vietnam_pro_light"
+        android:hint="@string/find_event"
+        android:imeOptions="actionSearch"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:textColorHint="@color/grey4"
+        android:textSize="@dimen/text_size_semi_big"
+        app:layout_constraintBottom_toBottomOf="@+id/view2"
+        app:layout_constraintEnd_toEndOf="@+id/view2"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/view2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

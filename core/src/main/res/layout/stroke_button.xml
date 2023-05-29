@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/btn_height"
+    android:background="@drawable/stroke_background">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:contentDescription="@string/icon"
+        android:src="@drawable/ic_ngo"
+        app:tint="@color/primary_color" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_toEndOf="@id/icon"
+        android:fontFamily="@font/be_vietnam_pro_bold"
+        android:text="@string/organization"
+        android:textColor="@color/primary_color"
+        android:textSize="@dimen/text_size_semi_big"
+        tools:ignore="RelativeOverlap" />
+
+    <ImageView
+        android:layout_width="18dp"
+        android:layout_height="19dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:src="@drawable/ic_arrow_right"
+        app:tint="@color/primary_color"
+        android:contentDescription="@string/icon" />
+
+</RelativeLayout>

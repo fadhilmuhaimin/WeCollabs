@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--LIST SDG-->
+    <string name="no_poverty">No Poverty</string>
+    <string name="zero_hunger">Zero Hunger</string>
+    <string name="good_health">Good Health</string>
+    <string name="quality_education">Quality Education</string>
+    <string name="gender_equality">Gender Equality</string>
+
+    <!--GENDER-->
+    <string name="man">Man</string>
+    <string name="woman">Woman</string>
+    <string name="icon">icon</string>
+
+    <string name="not_available">Not available for now</string>
+    <string name="image">Image</string>
+    <string name="organization">Organization</string>
+
+</resources>

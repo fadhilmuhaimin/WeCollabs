@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginStart="@dimen/activity_horizontal_margin"
+    android:layout_marginEnd="@dimen/activity_horizontal_margin"
+    android:layout_marginBottom="@dimen/activity_vertical_margin"
+    android:background="@drawable/rounded_background"
+    android:backgroundTint="@color/white"
+    android:orientation="vertical"
+    android:padding="@dimen/small_margin">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/be_vietnam_pro_bold"
+        android:text="@string/address"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/text_size_semi_big" />
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/very_small_margin"
+        android:fontFamily="@font/be_vietnam_pro_light"
+        android:justificationMode="inter_word"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/text_size_normal"
+        tools:text="Jl. Muchtar Lutfi, Maloku, Kec. Ujung Pandang, Kota Makassar, Sulawesi Selatan 90115" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/small_margin"
+        app:cardCornerRadius="@dimen/big_corner_radius"
+        app:cardElevation="0dp"
+        app:cardBackgroundColor="@color/background_color"
+        app:layout_constraintTop_toBottomOf="@id/mapText">
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/organizationMap"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:background="@drawable/rounded_background" />
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
